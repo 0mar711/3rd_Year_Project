@@ -1,4 +1,0 @@
-Number of finished trials: 50
-Best trial: {'batch_size': 1024, 'gamma': 0.018273619786169513, 'epsilon': 0.8918814676063037, 'epsilon_decay': 0.9937680226737035}
-No dimension reduction and ADASYN
-[I 2024-02-05 04:00:48,873] Trial 81 finished with value: 0.6941735013324364 and parameters: {'batch_size': 64, 'gamma': 0.005675196836013664, 'epsilon': 0.8838919191924494, 'epsilon_decay': 0.9960737105178636}. Best is trial 79 with value: 0.7234224211533984.
