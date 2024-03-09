@@ -53,7 +53,7 @@ Upon successful execution, you will see a message indicating the server is runni
 
 ### Navigating the Network Anomaly Detection Dashboard
 
-"This is the Anomaly Detection Network Dashboard. This is a primary platform that demonstrates extensive analysis of the network traffic data across diverse datasets, done by different machine learning models. The description of the interactive web application follows:
+The Anomaly Detection Network Dashboard is a primary platform that demonstrates extensive analysis of the network traffic data across diverse datasets, done by different machine learning models. The description of the interactive web application follows:
 
 #### Dashboard Overview
 After going to `/custom-hub/`, a greeting shall be presented with an overview of the aims and objectives. The subsequent section details on the introduction to the aim and goals of the project: the projects involve the development of effective machine learning models for network anomaly detection and the enhancement of the interpretability of the models.
@@ -72,7 +72,7 @@ The dashboard features detailed analyses for three significant datasets: UNSW-NB
 Each analysis provides insights into model performance, SHAP values, and more, offering an in-depth understanding of each model's effectiveness in detecting network anomalies.
 
 #### Interactive Components
-The dashboard leverages `explainerdashboard`'s interactive components, such as sliders and dropdowns, allowing you to customize the analysis. These features enable you to:
+The dashboard leverages `explainerdashboard`'s interactive components, such as sliders and predict components, allowing you to customize the analysis. These features enable you to:
 - Filter data based on specific criteria.
 - Adjust model parameters in real-time to observe their impact on the model's performance.
 - Explore SHAP values to understand feature importance in the decision-making process of the models.
@@ -86,6 +86,7 @@ To navigate to a specific dataset's analysis, use the navigation bar at the top:
 
 Each dataset page contains a description of the dataset, a graphical representation of attack distribution (if applicable), and buttons linking to detailed model analyses.
 
+**IMPORTANT NOTE:** The full analysis and componenets is only provided on the random forest and XGBoost models due to the infeasibility and no support for calculating SHAP values for the deep Keras models (LSTM and Reinforcement Learning DDQN)
 ## Setting Up and Running the Notebooks for Testing
 
 Before diving into the notebooks, you need to download the datasets used in this project from their respective websites.
