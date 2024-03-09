@@ -1,8 +1,8 @@
-# Network Anomaly Detection Dashboard
+# Network Anomaly Detection Project
 
 The Network Anomaly Detection Dashboard is an interactive web application aimed to showcase insights and analysis in the data of the traffic of the network that could enable findings during the analysis of activities that are malicious in the systems of networks.
 
-## Getting Started
+## Run Dashboard Instructions
 
 This guide will help you set up the Dashboard on your machine, from installation to navigating through the interactive website.
 
@@ -86,9 +86,54 @@ To navigate to a specific dataset's analysis, use the navigation bar at the top:
 
 Each dataset page contains a description of the dataset, a graphical representation of attack distribution (if applicable), and buttons linking to detailed model analyses.
 
-#### Conclusion
-The Network Anomaly Detection Dashboard is designed to be an educational and analytical tool for understanding network security through machine learning. By exploring different datasets and models, you gain insights into the complexity of network anomaly detection and the capabilities of various machine learning approaches in addressing these challenges.
+## Setting Up and Running the Notebooks for Testing
 
+Before diving into the notebooks, you need to download the datasets used in this project from their respective websites.
+
+ **Download Datasets**: Obtain the datasets from the following sources:
+   - UNSW-NB15: [Link to dataset](https://research.unsw.edu.au/projects/unsw-nb15-dataset)
+   - USB-IDS: [Link to dataset](https://idsdata.ding.unisannio.it/)
+   - CIC-IDS 2017: [Link to dataset](https://www.unb.ca/cic/datasets/ids-2017.html)
+   - inSDN: [Link to dataset](https://aseados.ucd.ie/datasets/SDN/)
+
+Organize Dataset Files: Create a new folder named datasets in the root directory of the project (3rd_Year_Project). Place all the downloaded dataset files into this datasets folder. This organization is important because the notebooks are configured to load datasets from this specific location.
+
+The project includes detailed Jupyter notebooks for data exploration, preprocessing, model training, and evaluation. Follow the next steps to set up your environment and explore the notebooks:
+
+1. **Set Up the Conda Environment**
+
+   Navigate to the project directory and create a new Conda environment using the provided `environment.yml` file. This file contains all the necessary packages to run the notebook.
+
+   ```
+   cd 3rd_Year_Project
+   conda env create -f environment.yml
+   ```
+
+2. **Activate the Environment**
+
+   Once the environment is ready, activate it:
+
+   ```
+   conda activate TensorFlowGPU
+   ```
+
+3. **Launching Jupyter Notebook**
+
+   Navigate to the directory containing the notebooks and start Jupyter notebook :
+
+   ```
+   jupyter notebook
+   ```
+
+### Notebook Structure and Execution Guidelines
+
+Each notebook is structured to guide you through the analysis process for different datasets, including UNSW-NB15, USB-IDS, CIC-IDS 2017, and inSDN. Here's what to expect:
+
+- **Table of Contents**: Easily navigate to different sections, including EDA (Exploratory Data Analysis), preprocessing, and model testing.
+- **Preprocessing Steps**: Follow and run all preprocessing steps before model evaluation to ensure data is properly prepared.
+- **Model Testing**: Detailed steps for training and evaluating models. To test or evaluate models, execute all preprocessing steps as well as train/test splits within the notebook.
+
+To ensure accurate results, run the notebooks in order, executing each code cell sequentially. You can also experiment with the code to explore different modeling techniques or data insights.
 
 ## Acknowledgments
 
