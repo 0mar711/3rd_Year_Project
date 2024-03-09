@@ -1,6 +1,6 @@
 # Network Anomaly Detection Dashboard
 
-Welcome to the Network Anomaly Detection Dashboard, an interactive web application designed to display insights and analysis on network traffic data, enabling the identification and analysis of malicious activities within network systems.
+The Network Anomaly Detection Dashboard is an interactive web application aimed to showcase insights and analysis in the data of the traffic of the network that could enable findings during the analysis of activities that are malicious in the systems of networks.
 
 ## Getting Started
 
@@ -30,12 +30,16 @@ Before you begin, ensure you have the following installed on your machine:
 
 3. **Install Required Packages**
 
-   Navigate to the root directory of the project in your terminal, and install the required Python packages using the `requirements.txt` file included in the repository:
+   Before proceeding, we recommend that you install the libraries in a fresh environment using Miniconda to make sure they are compatible and to avoid potential conflicts with existing packages. Using a fresh environment also helps in maintaining a clean workspace where only the necessary libraries for this project are installed.
+
+   After setting up your environment, navigate to the root directory of the project in your terminal. Install the required Python packages using the `requirements.txt` file included in the repository:
 
    ```
    cd 3rd_Year_Project
    pip install -r requirements.txt
    ```
+
+   ⚠️ **Caution**: If you are using a Conda environment, ensure that you are using the `pip` executable that corresponds to your activated Conda environment. This is to prevent the installation of packages in the wrong Python environment, which is a common issue, especially on Windows where the system-wide `pip` might take precedence. You can verify this by using the `where pip` command (on Windows) or `which pip` command (on Unix-like systems) after activating your environment. If the output does not point to the `pip` inside your Conda environment, refer to the troubleshooting steps provided to correct the `PATH` or use the full path to your environment's `pip` executable.
 
 ### Running the Server
 
@@ -49,10 +53,10 @@ Upon successful execution, you will see a message indicating the server is runni
 
 ### Navigating the Network Anomaly Detection Dashboard
 
-Welcome to the Network Anomaly Detection Dashboard, a comprehensive platform designed to analyze network traffic data across various datasets using different machine learning models. Here's how to navigate through the interactive web application:
+"This is the Anomaly Detection Network Dashboard. This is a primary platform that demonstrates extensive analysis of the network traffic data across diverse datasets, done by different machine learning models. The description of the interactive web application follows:
 
 #### Dashboard Overview
-Upon visiting `/custom-hub/`, you're greeted with an introduction to the project, highlighting the aims and objectives. This section provides a foundational understanding of the project's goals, including developing effective machine learning models for network anomaly detection and enhancing the interpretability of these models.
+After going to `/custom-hub/`, a greeting shall be presented with an overview of the aims and objectives. The subsequent section details on the introduction to the aim and goals of the project: the projects involve the development of effective machine learning models for network anomaly detection and the enhancement of the interpretability of the models.
 
 #### Dataset Specific Analysis
 The dashboard features detailed analyses for three significant datasets: UNSW-NB15, CIC-IDS 2017, and inSDN. For each dataset, you can explore:
