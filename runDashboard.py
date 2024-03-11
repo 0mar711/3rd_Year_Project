@@ -420,44 +420,52 @@ dash_app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/custom-hub/':
         return html.Div([
-            html.H1("Network Anomaly Detection Project", className='text-center mb-5', style={'color': '#6f42c1'}),
-            
-            dcc.Markdown("""
-                ## Introduction
-                This project explores network anomaly detection using various machine learning algorithms.
-                Here, you'll find interactive dashboards for different datasets and the machine learning models applied to them. &#9989;  <!-- Checkmark -->
-            """, className='mb-5', dangerously_allow_html=True),  # Enable HTML rendering
-            
             html.Div([
-                html.H2("Aims and Objectives", className='mb-4', style={'color': '#6f42c1'}),
-                html.Ul([
-                    html.Li([
-                        html.Strong("Aim 1:"),
-                        " To develop an effective machine learning model capable of detecting network anomalies with high accuracy."
-                    ], className='mb-2'),
-                    html.Li([
-                        html.Strong("Aim 2:"),
-                        " To compare the performance of different machine learning methods (supervised, unsupervised, and reinforcement learning) and its models in the context of network security."
-                    ], className='mb-4'),
-                ], style={'listStyleType': 'none'}),
-                
-                html.H4("Objectives", className='mb-3', style={'color': '#6f42c1'}),
-                html.Ul([
-                    html.Li([
-                        html.I(className="fas fa-check-circle", style={'color': 'green'}),  # Font Awesome icon
-                        " Implement and evaluate various machine learning algorithms for the different methods for anomaly detection."
-                    ], className='mb-2'),
-                    html.Li([
-                        html.I(className="fas fa-check-circle", style={'color': 'green'}),
-                        " Analyze the datasets to identify patterns and features significant for detecting network threats."
-                    ], className='mb-2'),
-                    html.Li([
-                        html.I(className="fas fa-check-circle", style={'color': 'green'}),
-                        " Enhance the interpretability of machine learning models to provide insights into the decision-making process."
-                    ], className='mb-2'),
-                ], style={'listStyleType': 'none'}),
-            ], className='aims-objectives')
-        ], className='container')
+                html.H1("Network Anomaly Detection Project", className='text-center mb-5', style={'color': '#6f42c1', 'fontSize': '2.5em'}),
+                dcc.Markdown("""
+                    ### Introduction
+                    This project leverages machine learning to enhance network security by identifying anomalies, seen as unusual activities.
+                """, className='mb-5', style={'fontSize': '1.25em'}),
+                html.Div([
+                    html.H2("Aims and Objectives", className='mb-4', style={'color': '#6f42c1', 'fontSize': '2em'}),
+                    html.Ul([
+                        html.Li([
+                            html.Span("➤ ", style={'fontSize': '1.5em', 'color': '#6f42c1'}),
+                            html.Strong("Test Different Machine Learning Methods: ", style={'fontSize': '1.25em'}),
+                            "Evaluate various machine learning methods (Supervised, Unsupervised, and Reinforcement Learning) and its best models to find the most effective at detecting network anomalies."
+                        ], className='mb-2', style={'listStyleType': 'none', 'fontSize': '1.25em'}),
+                        html.Li([
+                            html.Span("➤ ", style={'fontSize': '1.5em', 'color': '#6f42c1'}),
+                            html.Strong("Explore Datasets With Different Network Data and Attacks: ", style={'fontSize': '1.25em'}),
+                            "Examine network traffic to distinguish between normal and anomalous activities, as well as comparing the different datasets with the different models."
+                        ], className='mb-2', style={'listStyleType': 'none', 'fontSize': '1.25em'}),
+                        html.Li([
+                            html.Span("➤ ", style={'fontSize': '1.5em', 'color': '#6f42c1'}),
+                            html.Strong("Find Ways to Improve Model Accuracy: ", style={'fontSize': '1.25em'}),
+                            "Enhance the predictive accuracy of selected models for better anomaly detection."
+                        ], className='mb-2', style={'listStyleType': 'none', 'fontSize': '1.25em'}),
+                        html.Li([
+                            html.Span("➤ ", style={'fontSize': '1.5em', 'color': '#6f42c1'}),
+                            html.Strong("Find Ways to Make the Results More Interpretable: ", style={'fontSize': '1.25em'}),
+                            "Utilize visualizations to clearly present data and model insights."
+                        ], className='mb-2', style={'listStyleType': 'none', 'fontSize': '1.25em'}),
+                        html.Li([
+                            html.Span("➤ ", style={'fontSize': '1.5em', 'color': '#6f42c1'}),
+                            html.Strong("Build a User-Friendly and Interactive Dashboard: ", style={'fontSize': '1.25em'}),
+                            "Create an accessible dashboard to display the results of the models with interactive features to help understand the model more."
+                        ], className='mb-2', style={'listStyleType': 'none', 'fontSize': '1.25em'}),
+                    ], style={'paddingLeft': '0'}),
+                ], className='aims-objectives', style={'backgroundColor': 'white', 'padding': '20px', 'borderRadius': '15px', 'border': '2px solid #6f42c1'})
+            ], className='container', style={'border': '5px solid #6f42c1', 'padding': '20px', 'borderRadius': '25px', 'backgroundColor': '#f8f9fa'})
+        ], style={
+            'backgroundImage': 'url("/assets/Background.jpg")',
+            'backgroundSize': 'cover',
+            'minHeight': '100vh',
+            'backgroundRepeat': 'no-repeat',
+            'backgroundPosition': 'center center',
+            'backgroundAttachment': 'fixed'  # This ensures the background image covers the whole page.
+        })
+
     elif pathname == '/custom-hub/unsw':
         return html.Div([
             html.H2("Dataset: UNSW-NB15", className='mb-4', style={'color': '#6f42c1'}),
