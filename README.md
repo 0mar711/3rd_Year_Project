@@ -14,9 +14,9 @@ Before you begin, ensure you have the following installed on your machine:
 
 ### Installation
 
-1. **Clone the GitHub Repository**
+1. **Clone the GitHub Repository / Download zipped folder**
 
-   Start by cloning the repository containing the IDS Dashboard source code to your local machine. Use the following command in your terminal:
+   Start by cloning the repository containing the IDS Dashboard source code to your local machine / I will provide a zip folder of this project in Blackboard so you don't have to clone for supervisors. Use the following command in your terminal:
 
    ```
    git clone https://github.com/0mar711/3rd_Year_Project.git
