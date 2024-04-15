@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Aljefri"
+  given-names: "Omar"
+title: "Network Anomaly Detection Using Machine Learning 3rd Year Project"
+version: 1.0
+date-released: 2024-03-18
+url: "https://github.com/0mar711/3rd_Year_Project"
